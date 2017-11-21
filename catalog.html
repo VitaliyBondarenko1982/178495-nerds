@@ -8,20 +8,22 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="inner-page">
-  	<header class="main-header"> 
+  	<header class="main-header catalog-main-header"> 
+      <div class="wrapper">
+      <nav class="main-navigation">
       <a class="main-header-logo" href="index.html">
       	<img src="img/nerds-logo.svg" width="100" height="50" alt="Логотип дизайн-студии Нёрдс">	
       </a>
-        <nav class="main-navigation">
       	<ul class="site-navigation">
       	  <li><a href="workshop.html">Студия</a></li>
       	  <li><a href="customers.html">Клиенты</a></li>
       	  <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
       	  <li><a href="contacts.html">Контакты</a></li>
       	</ul>
-      </nav>
-      <span class="basket"><a href="basket.html">Корзина</a></span>
+      <p class="basket"><a href="basket.html">Корзина<a></p>
+    </nav>
       <h1>Магазин готовых шаблонов</h1>
+    </div>
     </header>
 
     <main class="container">
@@ -45,18 +47,19 @@
               <ul class="filter">
                 <li class="filter-option">
                   <label for="filter-adaptive">
-                    <input class=" filter-input filter-input-radio" type="radio" name="product-group" value="adaptive" id="filter-adaptive" checked>   Адаптивная
+                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="adaptive" id="filter-adaptive" checked>
+                    Адаптивная
                   </label>
                 </li> 
                 <li class="filter-option">
                   <label for="filter-fixed">
-                    <input class="filter-input filter-input-radio" type="radio" name="product-group" value="fixed" id="filter-fixed">
+                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="fixed" id="filter-fixed">
                     Фиксированная
                   </label>
                 </li>
                 <li class="filter-option">
                   <label for="filter-rubber">
-                    <input class="filter-input filter-input-radio" type="radio" name="product-group" value="rubber" id="filter-rubber" disabled>
+                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="rubber" id="filter-rubber" disabled>
                     Резиновая
                   </label>
                 </li>
@@ -67,31 +70,31 @@
                 <ul class="filter">
                   <li class="filter-option">
                     <label for="filter-slider">
-                      <input class="filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
                       Слайдер
                     </label>
                   </li>
                   <li class="filter-option">
                     <label for="filter-slider">
-                      <input class="filter-input filter-input-checkbox" type="checkbox" name="feature-block" id="filter-feature-block">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="feature-block" id="filter-feature-block">
                       Блок преимуществ
                     </label>
                   </li>
                   <li class="filter-option">
                     <label for="filter-slider">
-                      <input class="filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
                       Новости
                     </label>
                   </li>
                   <li class="filter-option">
                     <label for="filter-slider">
-                      <input class="filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
                       Галерея
                     </label>
                   </li>
                   <li class="filter-option">
                     <label for="filter-slider">
-                      <input class="filter-input filter-input-checkbox" type="checkbox" name="basket" id="filter-basket">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket" id="filter-basket">
                       Корзина
                     </label>
                   </li>
@@ -114,7 +117,7 @@
       		<div class="catalog-item-hover">
       		  <h2>Sedona</h2>
       		  <p>Информационный сайт для туристов</p>
-      		  <a class="button" href="">9900 Руб.</a>
+      		  <a class="button button-catalog-item" href="">9900 Руб.</a>
       		</div>	
       	  </li>
       	  <li class="catalog-item">
@@ -122,7 +125,7 @@
       		<div class="catalog-item-hover">
       		  <h2>Pink App</h2>
       		  <p>Продуктовый лендинг приложения для iOS и Android</p>
-      		  <a class="button" href="">9900 Руб.</a>	
+      		  <a class="button button-catalog-item" href="">9900 Руб.</a>	
       		</div>		
       	  </li>
       	  <li class="catalog-item">
@@ -130,7 +133,7 @@
       		<div class="catalog-item-hover">
       		  <h2>Barbershop</h2>
       		  <p>Сайт салоны красоты. Для мужчин, да.</p>
-      		  <a class="button" href="">9900 Руб.</a>	 
+      		  <a class="button button-catalog-item" href="">9900 Руб.</a>	 
       		</div>		
       	  </li>
       	  <li class="catalog-item">
@@ -138,7 +141,7 @@
       		<div class="catalog-item-hover">
       		  <h2>Mishka</h2>
       		  <p>Интернет-магазин вязаных игрушек</p>
-      		  <a class="button" href="">9900 Руб.</a>	
+      		  <a class="button button-catalog-item" href="">9900 Руб.</a>	
       		</div>		
       	  </li>
       	  <li class="catalog-item">
@@ -146,7 +149,7 @@
       		<div class="catalog-item-hover">
       		  <h2>A plus</h2>
       		  <p>Лендинг курсов повышения квалификации</p>
-      		  <a class="button" href="">9900 Руб.</a>	
+      		  <a class="button button-catalog-item" href="">9900 Руб.</a>	
       		</div>		
       	  </li>
       	  <li class="catalog-item">
@@ -154,7 +157,7 @@
       		<div class="catalog-item-hover">
       		  <h2>Кваст</h2>
       		  <p>Промо-сайт производителя крафтового кваса</p>
-      		  <a class="button" href="">9900 Руб.</a>	
+      		  <a class="button button-catalog-item" href="">9900 Руб.</a>	
       		</div>		
       	  </li>
       	</ul>
@@ -167,7 +170,7 @@
       </section>
 
       <section class="map">
-        <img src="map.jpg" width="1440" height="416" alt="Дизайн-студия Нёрдс, 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+        <img src="img/map.jpg" width="1440" height="416" alt="Дизайн-студия Нёрдс, 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
         <section class="contacts">
           <h3>Nёrds design studio</h3>
           <p>
@@ -177,7 +180,7 @@
           <p>
           тел. +7(812)775-75-75
           </p>
-          <a class="button write-us-button" href="#">Напишите нам</a>
+          <button class="button write-us-button" type="submit">Напишите нам</button>
         </section>
       </section>
     </main>

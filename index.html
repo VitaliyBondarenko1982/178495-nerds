@@ -7,69 +7,73 @@
 	  <link rel="stylesheet" href="css/normalize.css">
 	  <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body>  	
 	  <header class="main-header">
-			<a class="main-header-logo">
-				<img src="img/nerds-logo.svg" width="100" height="50" alt="Логотип дизайн-студии Нёрдс">	
-			</a>
-			<nav class="main-navigation">
-				<ul class="site-navigation">
-			  	<li><a href="workshop.html">Студия</a></li>
-			  	<li><a href="customers.html">Клиенты</a></li>
-			  	<li><a href="catalog.html">Магазин</a></li>
-			  	<li><a href="contacts.html">Контакты</a></li>
-				</ul>
-			</nav>
-			<span class="basket"><a href="basket.html">Корзина</a></span>	
-	  </header>
-
-	  <main class="container">
-	 		<h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
+	  	<div class="wrapper">
+	  		<nav class="main-navigation">
+				<a class="main-header-logo">
+					<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">	
+				</a>
+					<ul class="site-navigation">
+			  		<li><a href="workshop.html">Студия</a></li>
+			  		<li><a href="customers.html">Клиенты</a></li>
+			  		<li><a href="catalog.html">Магазин</a></li>
+			  		<li><a href="contacts.html">Контакты</a></li>
+					</ul>
+			<p class="basket"><a href="basket.html">Корзина</a></p>
+		  </nav>
+			<h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
 			<section class="features">
 				<h2 class="visually-hidden">Преимущества дизайн-студии Нёрдс</h2>
 				<div class="slider">	
 			  	<div class="slider-controls">
 						<label for="btn-1">
-							<input type="radio" id="btn-1" name="toggle" checked>
+							<input class="visually-hidden" type="radio" id="btn-1" name="toggle" checked>
 						</label>
 						<label for="btn-2">
-							<input type="radio" id="btn-2" name="toggle">
+							<input class="visually-hidden" type="radio" id="btn-2" name="toggle">
 						</label>
 						<label for="btn-3">
-							<input type="radio" id="btn-3" name="toggle">
+							<input class="visually-hidden" type="radio" id="btn-3" name="toggle">
 						</label>
 			 		</div>
 			 		<div class="slider-inner">
 						<div class="slider-slides">
-				  		<div class="slider-1">
-					 			<img src="img/slide1.png" width="663" height="411" alt="Изображение Слайдер-1">
+				  		<div class="slide active">
 					 			<div class="text-slider">
 									<p>Долго, дорого, скрупулезно</p>
-									<p>Математически выверенный дизайн для сайта или вашего приложения.</p>
+									<p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
 									<a class="button" href="#">Узнать больше</a>
 					 			</div>
+					 			<div class="image-slider">
+					 			<img src="img/slide1.png" width="760" height="431" alt="Изображение Слайдер-1">
+					 		 </div>
 				  		</div>
-				  		<div class="slider-2">
-					 			<img src="img/slide2.png" width="663" height="411" alt="Изображение Слайдер-2">
+				  		<div class="slide">
 					 			<div class="text-slider">
 									<p>Любим математику, как никто другой</p>
 									<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
 									<a class="button" href="#">Узнать больше</a>
 					 			</div>
+					 			<img src="img/slide2.png" width="760" height="431" alt="Изображение Слайдер-2">
 				  		</div>
-				  		<div class="slider-3">
-					 			<img src="img/slide3.png" width="663" height="411" alt="Изображение Слайдер-3">
+				  		<div class="slide">
 					 			<div class="text-slider">
 									<p>Только ночь, только хардкор</p>
 									<p>Работать днем, как все? Мы против этого.Ближе к полуночи работа только начинается.</p>
 									<a class="button" href="#">Узнать больше</a>
 					 			</div>
+					 			<img src="img/slide3.png" width="760" height="431" alt="Изображение Слайдер-3">
 				  		</div>	
 						</div>	
 			 		</div>
 				</div>
 			</section>
-		
+		</div>	
+	  </header>
+
+	  <div class="wrapper">
+	  <main class="container"> 				
 			<section class="products">
 				<h2 class="visually-hidden">Продукты дизайн-студии Нёрдс</h2>
 		  	<ul class="product-list">
@@ -94,6 +98,7 @@
 		  	</ul>
 			</section>
 
+		  <div class="wrapper">
 		  <div class="index-columns">
 			<section class="about-us">
 				<p>Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
@@ -123,7 +128,8 @@
 				</table>
 			</section>
 			</div>
-
+			</div>
+      <div class="wrapper">
 			<section class="partners">
 				<ul class="partners-logo">
 			  	<li>
@@ -148,9 +154,11 @@
 			 		</li>
 				</ul>
 			</section>
+			</div>
+		  </div>
 
 			<section class="map">
-      	<img src="map.jpg" width="1440" height="416" alt="Дизайн-студия Нёрдс, 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+      	<img src="img/map.jpg" width="1440" height="416" alt="Дизайн-студия Нёрдс, 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
 		  	<section class="contacts">
 		    	<h3>Nёrds design studio</h3>
 			  	<p>
@@ -160,7 +168,7 @@
 		    	<p>
 			    тел. +7(812)775-75-75
 		    	</p>
-		    	<a class="button write-us-button" href="#">Напишите нам</a>
+		    	<button class="button write-us-button" type="submit">Напишите нам</button>
 		  	</section>
 			</section>
 	  </main>
@@ -196,7 +204,7 @@
  		  	</p>
  		  	<button class="button button-write-us" type="submit">Отправить</button>
   		</form>
- 		  <button class="modal-close" type="button">Закрыть</button>
+ 		  <button class="modal-close" type="button"></button>
 	  </section>
   </body>
 </html>
