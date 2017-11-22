@@ -7,6 +7,7 @@ body {
   font-weight: 300;
   color: #000000;
   width: 1440px;
+  min-height:2476px;
 }
 .visually-hidden {
   position: absolute;
@@ -36,10 +37,12 @@ a {
   background-color: #eeeeee;
   text-transform: uppercase;
   padding-top: 49px;
+  min-height: 65px;
 }
-.wrapper{
-  margin-left: 135px;
-  width:1160px;
+.container{
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
 
 }
 .main-navigation{
@@ -53,10 +56,12 @@ a {
   display:flex;
   width: 440px;
   justify-content: space-around;
+  
 }
 .basket {
   width: 160px;
-  text-align:right;
+  text-align: right;
+  align-self: center;
 }
 .slide{
   display:none;
@@ -64,7 +69,6 @@ a {
 .slide.active{
   display:flex;
 }
-
 
 .site-navigation,
 .product-list,
@@ -77,6 +81,9 @@ a {
 
 .site-navigation{
   display:flex;
+  margin:0;
+  padding:0;
+  align-items: center;
 }
 .site-navigation a,
 .basket a{
@@ -118,16 +125,23 @@ a {
   background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
 }
+.products{
+  margin-bottom: 122px;
+}
 .product-list{
   display: flex;
   width:1100px;
   min-height: 347px;
-  justify-content: space-around;
-  margin-bottom: 80px;
+  margin: 0;
+  padding: 0;
 }
 .product-list li{
   width: 300px;
   min-height: 347px;
+  margin-right: 100px;
+}
+.product-list li:last-child{
+  margin-right: 0;
 }
 .product-list img{
   margin-bottom:26px;
@@ -183,12 +197,16 @@ a {
 }
 .index-columns{
   display:flex;
-  justify-content: space-around;
-  width: 1160px;
+  margin-bottom: 40px; 
 }
 .about-us{
   width:660px;
-  padding-top: 80px;
+  min-height: 400px;
+  margin-right: 149px;
+}
+.about-us-products{
+  margin: 0;
+  padding: 0;
 }
 .about-us p:first-child{
   font-size: 45px;
@@ -196,15 +214,18 @@ a {
   font-weight: 500;
   margin-bottom: 45px;
 }
-.about-us p:last-child{
+.about-us p:nth-child(2){
   margin-bottom: 45px;
 }
 .about-us h3{
   font-weight: 700;
   text-transform: uppercase;
+  margin-bottom:35px;
+}
+.about-us li{
+  margin-bottom: 35px;
 }
 .exactness{
-  padding-top: 42px;
   width: 360px;
 }
 .exactness img{
@@ -228,7 +249,14 @@ a {
 }
 .partners-logo{
   display: flex;
-  flex-basis: 1160px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: space-around;
+}
+.partners-logo li{
+  width: 260px;
+  min-height: 180px;
 }
 .partners-logo img{
   opacity: 0.2;
@@ -239,30 +267,38 @@ a {
 .partners-logo img:active{
   opacity: 0.1;
 }
-.map h3{
+.map{
+ position: relative;
+ right: 140px;
+}
+.contacts h3{
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+  padding-top: 54px;
 }
-.map p{
+.contacts p{
   line-height: 18px;
+}
+.contacts{
+  width: 319px;
+  height: 298px;
+  position: relative;
+  background-color: #ffffff;
+  top:-385px;
+  left:140px;
+  text-align: center;
 }
 .contacts button{
   background-color: #fb565a;
   border:none;
   color:#ffffff;
-  padding:19px 83px;
+  padding:19px 45px;
   line-height: 18px;
+  margin-top: 10px;
 }
-.discont p:first-child{
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 700;
-}
-.discont p:last-child{
-  line-height: 18px;
-}
+
 .modal-write-us h2{
   font-size: 45px;
   line-height: 45px;
@@ -300,7 +336,33 @@ a {
   border:none;
   padding: 19px 83px; 
 }
+.main-footer{
+  height: 217px;
+  background-color: yellow;
+}
+.main-footer .container{
+  display: flex;
+  align-items: center;
+ }
 
+.footer-social{
+  margin-right: 139px;
+  padding: 0;
+  width: 260px;
+}
+
+.discont{
+  width: 545px;
+  padding: 0;
+}
+.discont p:first-child{
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
+.discont p:last-child{
+  line-height: 18px;
+}
 .inner-page .catalog-main-header{
   min-height: 355px;
 }
@@ -310,6 +372,11 @@ a {
   font-weight: 500;
   text-align: center;
 }
+.filters{
+  width: 300px;
+  min-height: 800px;
+}
+
 .filters fieldset{
   border: none;
 }
@@ -376,6 +443,29 @@ a {
 .sort a:focus,
 .sort a:active{
   opacity: 1;
+}
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
+}
+.catalog{
+  width: 760px;
+  min-height: 1920px;
+}
+.catalog-list{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+.catalog-item{
+  width: 360px;
+  min-height: 617px;
+  margin-bottom: 33px;
+  margin-right: 40px;
+}
+.catalog-item:nth-child(2n) {
+  margin-right: 0;
 }
 .catalog-item-hover h2{
   font-size: 18px;
