@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="inner-page">
-  	<header class="main-header catalog-main-header"> 
+  	<header class="main-header"> 
       <div class="container">
       <nav class="main-navigation">
       <a class="main-header-logo" href="index.html">
@@ -26,7 +26,6 @@
     </div>
     </header>
 
-    
     <main class="container">
       <div class="catalog-columns">
       <section class="filters">
@@ -107,12 +106,14 @@
       </section>
 
       <section class="catalog">
-      	<p class="sort">
-      		Сортировать:
-      		<a href="#">По цене</a>
-      		<a href="#">По типу</a>
-      		<a href="#">По названию</a>
-      	</p>
+      	<div class="sort">
+      		<p class="sort-title">Сортировать:</p>
+      		<ul class="sort-list">
+          <li><a href="#">По цене</a></li>
+      		<li><a href="#">По типу</a></li>
+      		<li><a href="#">По названию</a></li>
+          </ul>
+      	</div>
       	<ul class="catalog-list">
       	  <li class="catalog-item">
       		<a href="#"><img src="img/img-sedona.jpg" width="360" height="576" alt="Седона"></a>
@@ -190,9 +191,9 @@
     <footer class="main-footer">
       <div class="container">
       <ul class="footer-social">
-        <li><a class="social-button" href="#">Вконтакте</a></li>
-        <li><a class="social-button" href="#">Фейсбук</a></li>
-        <li><a class="social-button" href="#">Инстаграм</a></li>
+        <li><a class="social-button vk" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+        <li><a class="social-button fb" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+        <li><a class="social-button insta" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
       </ul>
       <div class="discont">
         <p>Давайте дружить, это вигодно!</p>
@@ -202,26 +203,25 @@
     </footer>
 
     <section class="modal modal-write-us">
+      <div class="modal-wrapper">
       <h2>Напишите нам:</h2>
-      <form class="wrte-us-form" action="#" method="post">
-        <p>
-          <label for="write-us-name">Ваше имя:
-            <input id="write-us-name" type="text" name="name" placeholder="Представтесь, пожалуйста">
-          </label>
+      <form class="write-us-form" action="#" method="post">
+        <p class="write-us-item">
+          <label for="write-us-name">Ваше имя:</label>
+          <input id="write-us-name" type="text" name="name" placeholder="Представтесь, пожалуйста"> 
+        </p>
+        <p class="write-us-item">
+          <label for="write-us-mail">Ваш e-mail:</label>
+          <input id="write-us-mail" type="email" name="email" placeholder="Для отправки ответа">
         </p>
         <p>
-          <label for="write-us-mail">Ваш e-mail:
-            <input id="write-us-mail" type="email" name="email" placeholder="Для отправки ответа">
-          </label>
-        </p>
-        <p>
-          <label for="text-of-letter">Текст письма:
-            <textarea id="text-of-letter" name="letter" rows="5" cols="20" placeholder="В свободной форме"></textarea>
-          </label>
+          <label for="text-of-letter">Текст письма:</label>
+          <textarea id="text-of-letter" name="letter" rows="5" cols="20" placeholder="В свободной форме"></textarea>
         </p>
         <button class="button button-write-us" type="submit">Отправить</button>
       </form>
       <button class="modal-close" type="button">Закрыть</button>
+      </div>
     </section>
   </body>
  </html>
