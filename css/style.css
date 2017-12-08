@@ -988,10 +988,13 @@ a {
 .catalog-item {
   position: relative;
   width: 360px;
-  min-height: 617px;
-  margin-bottom: 32px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 70px;
   margin-right: 40px;
+  box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.5);
 }
+
 .catalog-item:nth-child(2n) {
   margin-right: 0;
 }
@@ -1017,11 +1020,12 @@ a {
   height: 231px;
   text-align: center;
   background-color: #eeeeee;
-  top: 346px;
+  bottom: 0;
   left: 0;
+  
 }
 .catalog-item:hover {
-  box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.5);
 }
 .catalog-item:hover .catalog-item-hover {
   display: block;
