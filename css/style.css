@@ -581,10 +581,18 @@ a {
   min-height: 416px;
   position: relative;
   right: 140px;
+}
+.map::before {
+  content: ""; 
+  position: absolute;
+  width: 231px;
+  height: 190px;
   background-image: url("../img/map-marker.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   z-index: 2;
+  top: 88px;
+  left: 820px;
 }
 .contacts {
   width: 319px;
@@ -988,13 +996,15 @@ a {
 .catalog-item {
   position: relative;
   width: 360px;
+  height: 576px;
   margin: 0;
   padding: 0;
-  margin-bottom: 70px;
+  margin-bottom: 73px;
   margin-right: 40px;
-  box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.5);
 }
-
+.catalog-item img {
+  height: 100%;
+}
 .catalog-item:nth-child(2n) {
   margin-right: 0;
 }
@@ -1030,11 +1040,13 @@ a {
 .catalog-item:hover .catalog-item-hover {
   display: block;
 }
-.catalog-item-hover h2 {
+.catalog-item-hover .title-catalog-item {
+  display: block;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+  color: #000000;
   margin-top: 28px;
   margin-bottom: 15px;
 }
@@ -1042,14 +1054,14 @@ a {
   line-height: 18px;
   margin-bottom: 42px;
 }
-.catalog-item-hover a {
+.catalog-item-hover .button-catalog-item {
   background-color: #fb565a;
   padding: 16px 63px;
 }
-.catalog-item-hover a:hover {
+.catalog-item-hover .button-catalog-item:hover {
   background-color: #e74246;
 }
-.catalog-item-hover a:focus {
+.catalog-item-hover .button-catalog-item:focus {
   background-color: #d7373b;
 }
 .pagination-list {
