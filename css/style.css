@@ -1,11 +1,11 @@
 body {
+	width: 100%;
 	margin: 0;
 	padding: 0;
 	font-family: "Roboto", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 400;
-	min-width: 1200px;
 	color: #000000;
 }
 .visually-hidden:not(:focus):not(:active),
@@ -37,10 +37,10 @@ a {
 .main-header {
 	background-color: #eeeeee;
 	min-height: 545px;
+	margin: 0 auto;
 	margin-bottom: 80px;
-	width: 100%;
-
 }
+	
 .main-header-logo {
 	margin: 0;
 	padding: 0;
@@ -517,6 +517,7 @@ a {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
 	-webkit-box-pack: justify;
@@ -622,6 +623,9 @@ a {
 	padding: 18px 43px 15px 45px;
 	margin-top: 21px;
 }
+.contacts-container .write-us-button:active {
+	box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+}
 .main-footer {
 	margin: 0;
 	min-height: 177px;
@@ -678,15 +682,15 @@ a {
 .social-button:focus path {
 	fill: #e37376;
 }
-.discont {
+.discount {
 	width: 545px;
 }
-.discont p:first-child {
+.discount p:first-child {
 	font-size: 36px;
 	line-height: 36px;
 	font-weight: 700;
 }
-.discont p:last-child {
+.discount p:last-child {
 	line-height: 18px;
 	margin-top: -25px;
 }
@@ -1044,6 +1048,7 @@ a {
 .catalog-item-hover p {
 	line-height: 18px;
 	margin-bottom: 42px;
+	color: #666666;
 }
 .catalog-item-hover .button-catalog-item {
 	background-color: #fb565a;
@@ -1055,6 +1060,7 @@ a {
 }
 .catalog-item-hover .button-catalog-item:focus {
 	background-color: #d7373b;
+	box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 .pagination-list {
 	list-style: none;
@@ -1222,9 +1228,9 @@ a {
 .modal-write-us textarea,
 .modal-write-us textarea:hover {
 	line-height: 18px;
-	color: #444444;
-	opacity: 0.3;
-	border: 2px solid #d7dcde;
+	color: #d7dbdd;
+	border: 2px solid #d7dbdd;
+	border-radius: 2px;
 	font-size: 16px; 
 }
 .modal-write-us input:focus,
