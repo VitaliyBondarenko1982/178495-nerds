@@ -1,5 +1,5 @@
 body {
-	width: 100%;
+	max-width: 100%;
 	margin: 0;
 	padding: 0;
 	font-family: "Roboto", Arial, sans-serif;
@@ -1020,7 +1020,7 @@ a {
 	opacity: 1;
 }
 .catalog-item-hover {
-	display: none;
+	display: block;
 	position: absolute;
 	width: 360px;
 	height: 231px;
@@ -1047,8 +1047,12 @@ a {
 }
 .catalog-item-hover p {
 	line-height: 18px;
+	padding: 0 65px;
 	margin-bottom: 42px;
 	color: #666666;
+}
+.catalog-item-hover .description-item {
+	padding: 0 79px;
 }
 .catalog-item-hover .button-catalog-item {
 	background-color: #fb565a;
