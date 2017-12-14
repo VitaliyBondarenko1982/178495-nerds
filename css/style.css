@@ -35,11 +35,11 @@ img {
 a {
 	text-decoration: none;
 }
-.main-header{
-  background-color: #eeeeee;
-  min-height: 545px;
-  margin: 0 auto;
-  margin-bottom: 80px;
+.main-header {
+	background-color: #eeeeee;
+	min-height: 545px;
+	margin: 0 auto;
+	margin-bottom: 80px;
 }
 .main-header-logo {
 	margin: 0;
@@ -52,11 +52,9 @@ a {
 	opacity: 0.3;
 }
 .container {
-	-webkit-box-sizing: border-box;
-		box-sizing: border-box;
 	width: 1160px;
 	margin: 0 auto;
-    padding: 0 20px;
+	padding: 0 20px;
 }
 
 .main-navigation {
@@ -65,8 +63,8 @@ a {
 	display: flex;
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
- 		justify-content: space-between;
- 	width: 1160px;
+		justify-content: space-between;
+	width: 1160px;
 	padding-top: 49px;
 	font-weight: 500;
 	line-height: 30px;
@@ -82,10 +80,10 @@ a {
 		flex-wrap: wrap;
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
- 		justify-content: space-between;
+		justify-content: space-between;
 	-webkit-box-align: center;
 	-ms-flex-align: center;
- 		align-items: center;
+		align-items: center;
 	list-style: none;
 	width: 440px;
 	margin: 0;
@@ -496,7 +494,7 @@ a {
 .partners {
 	position: relative;
 	margin-bottom: 17px;
-	max-width: 100%;
+	width: 1160px;
 }
 .partners::before,
 .partners::after {
@@ -527,7 +525,6 @@ a {
 }
 .partners-logo li {
 	position: relative;
-	width: 260px;
 	min-height: 180px;
 }
 
@@ -538,14 +535,16 @@ a {
 
 .partners-logo li:nth-child(2) {
 	margin-top: -15px;
-	margin-right: 0px;
+	margin-right: 20px;
 }
 .partners-logo li:nth-child(3) {
 	margin-top: 5px;
+    margin-left: -30px;
+
 }
 .partners-logo li:nth-child(4) {
 	margin-top: -7px;
-	margin-right: -5px;
+	margin-right: 40px;
 }
 .partners-logo li::after {
 	content: "";
@@ -595,7 +594,7 @@ a {
 	background-position: ;
 	z-index: 2;
 	top: 88px;
-	left: 680px;
+	left: 700px;
 }
 .container-contacts {
   position: relative;
@@ -625,6 +624,7 @@ a {
 }
 .contacts-wrapper .write-us-button {
 	display: inline-block;
+	vertical-align: top;
 	background-color: #fb565a;
 	padding: 18px 43px 15px 45px;
 	margin-top: 21px;
@@ -634,8 +634,8 @@ a {
 }
 .main-footer {
 	margin: 0;
-	min-height: 177px;
-	padding-top: 32px;
+	min-height: 169px;
+	padding-top: 40px;
 }
 .main-footer .container {
 	display: -webkit-box;
@@ -704,7 +704,6 @@ a {
 	border: none;
 	padding: 0;
 	margin: 0;
-  
 }
 .filters legend {
 	font-size: 18px;
