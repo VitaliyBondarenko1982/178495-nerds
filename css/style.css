@@ -35,12 +35,12 @@ img {
 a {
 	text-decoration: none;
 }
-.main-header {
-	background-color: #eeeeee;
-	min-height: 545px;
-	margin-bottom: 80px;
+.main-header{
+  background-color: #eeeeee;
+  min-height: 545px;
+  margin: 0 auto;
+  margin-bottom: 80px;
 }
-	
 .main-header-logo {
 	margin: 0;
 	padding: 0;
@@ -56,8 +56,9 @@ a {
 		box-sizing: border-box;
 	width: 1160px;
 	margin: 0 auto;
-	padding: 0 20px;
+    padding: 0 20px;
 }
+
 .main-navigation {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -493,9 +494,9 @@ a {
 	margin-right: 23px;
 }
 .partners {
-	width: 1200px;
 	position: relative;
 	margin-bottom: 17px;
+	max-width: 100%;
 }
 .partners::before,
 .partners::after {
