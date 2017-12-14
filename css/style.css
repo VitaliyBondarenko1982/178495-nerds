@@ -38,7 +38,6 @@ a {
 .main-header {
 	background-color: #eeeeee;
 	min-height: 545px;
-	margin: 0 auto;
 	margin-bottom: 80px;
 }
 	
@@ -335,7 +334,7 @@ a {
 }
 .product-list p {
 	margin-bottom: 32px;
-	width:245px;
+	width: 278px;
 }
 .product-list .button-products {
 	display: block;
@@ -577,7 +576,6 @@ a {
 	opacity: 0.1;
 }
 .map {
-	min-width: 1200px;
 	min-height: 416px;
 	width: 100%;
 	height: 100%;
